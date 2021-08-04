@@ -9,7 +9,7 @@ import Spring
 
 class ViewController: UIViewController {
     
-    var buttonCounter = 1
+    private var buttonCounter = 1
     private var animation: Animated!
     
     @IBOutlet weak var labelNameAnimation: SpringLabel!
