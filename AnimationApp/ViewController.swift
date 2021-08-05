@@ -9,11 +9,11 @@ import Spring
 
 class ViewController: UIViewController {
     
-    private var buttonCounter = 1
-    private var animation: Animated!
-    
     @IBOutlet weak var labelNameAnimation: SpringLabel!
     @IBOutlet weak var springAnimatedView: SpringView!
+    
+    private var buttonCounter = 1
+    private var animation = Animated.getAnimation()
     
     @IBAction func buttonPressedAction(_ sender: SpringButton) {
         buttonCounter += 1
